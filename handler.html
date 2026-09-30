@@ -1,0 +1,34 @@
+<?php
+/**
+ * Nutmeg Spruce — handles contact messages, service enquiries and newsletter sign-ups.
+ * Works on any PHP host with mail() enabled. Set $to to the inbox that should receive messages.
+ */
+header('Content-Type: application/json; charset=utf-8');
+header('X-Content-Type-Options: nosniff');
+
+$to   = 'hello@nutmegspruce.com';
+$from = 'no-reply@nutmegspruce.com';
+
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') { http_response_code(405); echo json_encode(['ok' => false]); exit; }
+
+function clean($v, $max = 2000) { $v = trim(strip_tags((string)$v)); return mb_substr(str_replace(["\r\n", "\r"], "\n", $v), 0, $max); }
+function one_line($v) { return str_replace(["\n", "\r", "%0a", "%0d"], ' ', $v); }
+
+$type  = clean($_POST['type'] ?? '', 20);
+$email = filter_var(clean($_POST['email'] ?? '', 200), FILTER_VALIDATE_EMAIL);
+if (!$email || !in_array($type, ['contact', 'enquiry', 'newsletter'], true)) { http_response_code(422); echo json_encode(['ok' => false]); exit; }
+if (!empty($_POST['website'])) { echo json_encode(['ok' => true]); exit; } // spam honeypot
+
+if ($type === 'newsletter') {
+  $subject = 'New newsletter subscriber';
+  $body = "New subscriber: $email\nDate: " . date('c');
+} else {
+  $subject = ($type === 'enquiry' ? 'Service enquiry: ' : 'Website message: ') . clean($_POST['topic'] ?? 'General', 80);
+  $body = "Name: " . clean($_POST['name'] ?? '', 120) . "\nEmail: $email\n";
+  if (!empty($_POST['when'])) $body .= "Preferred timing: " . clean($_POST['when'], 120) . "\n";
+  $body .= "\n" . clean($_POST['message'] ?? '', 5000);
+}
+$headers  = 'From: Nutmeg Spruce <' . $from . ">\r\n";
+$headers .= 'Reply-To: ' . one_line($email) . "\r\n";
+$headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+echo json_encode(['ok' => (bool)@mail($to, one_line($subject), $body, $headers)]);

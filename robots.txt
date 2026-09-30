@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /handler.php
+
+Sitemap: https://nutmegspruce.com/sitemap.xml
